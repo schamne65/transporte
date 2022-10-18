@@ -1,0 +1,139 @@
+.headerdesko {
+  display: none;
+}
+
+header {
+  background-color: beige;
+}
+
+.headerResponsive {
+  position: sticky;
+  top: 0;
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.inicio img {
+  width: 100%;
+  height: auto;
+}
+
+.tarjeta article {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 2rem;
+}
+.tarjeta article h2 {
+  font-size: 2rem;
+}
+.tarjeta div {
+  background-color: white;
+  border-radius: 50%;
+  margin: 1rem 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.tarjeta div i {
+  padding: 2rem;
+  font-size: 3.5rem;
+}
+.tarjeta div p {
+  font-size: 2rem;
+}
+
+.orden div {
+  width: 100%;
+  height: auto;
+}
+.orden div img {
+  width: 100%;
+  height: auto;
+}
+
+.formulario div form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.formulario div input {
+  width: 50%;
+  margin: 0.5rem 0;
+}
+.formulario div textarea {
+  width: 50%;
+}
+
+.height {
+  min-height: 100vh;
+  scroll-margin-top: 4rem;
+}
+
+.objetivos div {
+  width: 100vw;
+}
+.objetivos div img {
+  width: 100%;
+  height: auto;
+}
+
+.sucursales div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.sucursales div div {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 6rem;
+  height: 6rem;
+}
+
+.info {
+  background-color: rgba(170, 170, 170, 0.3333333333);
+  opacity: 0.8;
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.info:target {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.info:target div {
+  background-color: aqua;
+  width: 10rem;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+* {
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+  background-color: #B4FF9F;
+}
+
+/*# sourceMappingURL=style.css.map */

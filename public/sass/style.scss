@@ -1,0 +1,18 @@
+@use "header";
+@use "inicio";
+@use "servicio";
+@use "destinos";
+@use "contacto";
+@use "todos";
+@use "nuestro";
+@use "sucursales";
+*{
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+}
+.body{
+    background-color:  #B4FF9F ; 
+}
+  
+

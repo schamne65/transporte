@@ -1,0 +1,13 @@
+.headerdesko{
+    display: none;
+}
+header{
+    background-color: beige;
+}
+.headerResponsive{
+    position: sticky;
+    top: 0;
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
