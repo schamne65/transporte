@@ -1,18 +1,32 @@
 .sucursales{
-  
-
     div{width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
         div{
+           position: relative;
+          
+            border-radius: 0.5rem;
             margin: 1rem;
         display: flex;
         flex-direction: column  ;
         background-color: white;
         width: 6rem;
         height: 6rem;
+        p{
+            position: absolute;
+        }
+        a{ position: absolute;
+            bottom: 0.3rem;
+            button{
+                border: 1px solid black;
+              padding: 0.2rem;
+            }
+        }
+        img{
+            max-width: 100%;
+        }
         }
     }
 }

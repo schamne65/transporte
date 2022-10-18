@@ -12,6 +12,7 @@ header {
   padding-top: 1rem;
   display: flex;
   justify-content: space-around;
+  z-index: 300;
 }
 
 .inicio img {
@@ -95,12 +96,28 @@ header {
   flex-wrap: wrap;
 }
 .sucursales div div {
+  position: relative;
+  border-radius: 0.5rem;
   margin: 1rem;
   display: flex;
   flex-direction: column;
   background-color: white;
   width: 6rem;
   height: 6rem;
+}
+.sucursales div div p {
+  position: absolute;
+}
+.sucursales div div a {
+  position: absolute;
+  bottom: 0.3rem;
+}
+.sucursales div div a button {
+  border: 1px solid black;
+  padding: 0.2rem;
+}
+.sucursales div div img {
+  max-width: 100%;
 }
 
 .info {
