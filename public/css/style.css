@@ -121,6 +121,7 @@ header {
 }
 
 .info {
+  z-index: 100;
   background-color: rgba(170, 170, 170, 0.3333333333);
   opacity: 0.8;
   display: none;
@@ -147,6 +148,9 @@ header {
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+.info:target p {
+  position: relative;
 }
 
 * {
