@@ -7,12 +7,16 @@
             justify-content: center;
             align-items: center;
         }
-        input{
-           width: 50%;
+        input{border-radius: 1rem;
+            box-shadow: 1px 2px gray;
+           width: 70%;
            margin: 0.5rem 0;
+           padding: 0.5rem;
         }
         textarea{
-            width: 50%;
+            border-radius: 1rem;
+            box-shadow: 1px 2px gray;
+            width: 70%;
         }
     }
         

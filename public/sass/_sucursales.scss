@@ -5,26 +5,36 @@
         align-items: center;
         flex-wrap: wrap;
         div{
+           
            position: relative;
-          
-            border-radius: 0.5rem;
+           border-radius: 0.9rem;
             margin: 1rem;
         display: flex;
         flex-direction: column  ;
         background-color: white;
-        width: 6rem;
-        height: 6rem;
+        width: 9rem;
+        height: 9rem;
         p{
             position: absolute;
+            top: 0.9rem;
         }
         a{ position: absolute;
             bottom: 0.3rem;
+            
             button{
+                box-shadow: 3px 3px ;
                 border: 1px solid black;
+                border-radius: 5px;
               padding: 0.2rem;
             }
+            button:hover{
+                background-color: black;
+                color: white;
+                box-shadow: 3px 3px #ccc;
+            }
         }
-        img{
+
+        img{overflow: hidden;
             max-width: 100%;
         }
         }
@@ -41,7 +51,11 @@
     bottom: 0;
     left: 0;
     right: 0;
-   
+  p{
+    i{
+        display:flex;
+    }
+  }
   
 }
 
@@ -65,5 +79,16 @@
    p{
     position: relative;;
    }
+   i{
+ 
+    a{
+        position: relative
+        ;
+    }
+   }
+}
+
+.fa-rectangle-xmark{
+  color: black;
 }
    

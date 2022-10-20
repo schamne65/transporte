@@ -65,11 +65,16 @@ header {
   align-items: center;
 }
 .formulario div input {
-  width: 50%;
+  border-radius: 1rem;
+  box-shadow: 1px 2px gray;
+  width: 70%;
   margin: 0.5rem 0;
+  padding: 0.5rem;
 }
 .formulario div textarea {
-  width: 50%;
+  border-radius: 1rem;
+  box-shadow: 1px 2px gray;
+  width: 70%;
 }
 
 .height {
@@ -97,26 +102,35 @@ header {
 }
 .sucursales div div {
   position: relative;
-  border-radius: 0.5rem;
+  border-radius: 0.9rem;
   margin: 1rem;
   display: flex;
   flex-direction: column;
   background-color: white;
-  width: 6rem;
-  height: 6rem;
+  width: 9rem;
+  height: 9rem;
 }
 .sucursales div div p {
   position: absolute;
+  top: 0.9rem;
 }
 .sucursales div div a {
   position: absolute;
   bottom: 0.3rem;
 }
 .sucursales div div a button {
+  box-shadow: 3px 3px;
   border: 1px solid black;
+  border-radius: 5px;
   padding: 0.2rem;
 }
+.sucursales div div a button:hover {
+  background-color: black;
+  color: white;
+  box-shadow: 3px 3px #ccc;
+}
 .sucursales div div img {
+  overflow: hidden;
   max-width: 100%;
 }
 
@@ -130,6 +144,9 @@ header {
   bottom: 0;
   left: 0;
   right: 0;
+}
+.info p i {
+  display: flex;
 }
 
 .info:target {
@@ -151,6 +168,36 @@ header {
 }
 .info:target p {
   position: relative;
+}
+.info:target i a {
+  position: relative;
+}
+
+.fa-rectangle-xmark {
+  color: black;
+}
+
+footer {
+  background-color: gray;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer div {
+  padding: 0.3rem;
+}
+footer div i {
+  color: white;
+  font-size: 1.5rem;
+  padding: 0.2rem;
+}
+footer div i:hover {
+  color: darkgreen;
+}
+footer div strong {
+  font-size: 0.8rem;
 }
 
 * {
