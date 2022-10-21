@@ -20,6 +20,11 @@ header {
   height: auto;
 }
 
+.tarjeta {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
 .tarjeta article {
   display: flex;
   flex-direction: column;
@@ -29,14 +34,16 @@ header {
   font-size: 2rem;
 }
 .tarjeta div {
-  background-color: white;
-  border-radius: 50%;
-  margin: 1rem 0;
-  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-wrap: nowrap;
+  width: 20rem;
+  background-color: white;
+  border-radius: 50%;
+  margin: 1rem 0;
+  text-align: center;
 }
 .tarjeta div i {
   padding: 2rem;
@@ -56,6 +63,21 @@ header {
 }
 .orden p {
   margin: 0.3rem;
+}
+
+@media screen and (min-width: 480px) {
+  .orden div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .orden div div {
+    width: 50%;
+    height: auto;
+  }
+  .orden div div p {
+    margin: 1rem;
+  }
 }
 
 .formulario div form {
@@ -93,6 +115,15 @@ header {
   margin: 0.3rem;
 }
 
+@media screen and (min-width: 480px) {
+  .objetivos div {
+    display: flex;
+  }
+  .objetivos div img {
+    width: 100%;
+  }
+}
+
 .sucursales div {
   width: 100%;
   display: flex;
@@ -107,7 +138,7 @@ header {
   display: flex;
   flex-direction: column;
   background-color: white;
-  width: 9rem;
+  width: 6rem;
   height: 9rem;
 }
 .sucursales div div p {

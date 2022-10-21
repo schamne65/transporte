@@ -1,14 +1,42 @@
 .orden{
+ 
     div{
         width: 100%;
         height: auto;
         img{ 
             width:100% ;
-            height: auto;
+            height:auto;
         }
     }
     p{
         margin: 0.3rem;
     }
 
+}
+
+@mixin media {
+    @media screen and (min-width: 480px){
+        div{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+          div{
+           
+            width: 50%;
+            height: auto;
+            p{
+                margin: 1rem;
+
+            }
+          }
+        }
+       
+    } 
+              
+        
+    
+}
+
+.orden {
+    @include media()
 }

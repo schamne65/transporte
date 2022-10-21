@@ -9,3 +9,21 @@
         }
     }
 }
+
+@mixin media {
+    @media screen and (min-width: 480px) {
+        
+        div{
+            display: flex;
+            img{
+                width: 100%;
+            }
+        }
+        
+    }
+    
+}
+
+.objetivos{ 
+    @include media()
+}

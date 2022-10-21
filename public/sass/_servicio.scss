@@ -1,5 +1,8 @@
 .tarjeta{
-  
+  display: flex;
+  text-align: center;
+  justify-content: center;
+
     article{
         h2{font-size: 2rem;}
         display: flex;
@@ -7,14 +10,17 @@
         margin: 1rem 2rem;
     }
     div{
-        background-color: white;
-        border-radius: 50%;
-        margin: 1rem 0;
-        text-align: center;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        flex-wrap: nowrap;
+        width: 20rem;
+        background-color: white;
+        border-radius: 50%;
+        margin: 1rem 0;
+        text-align: center;
+       
         i{
             padding: 2rem;
             font-size: 3.5rem;
