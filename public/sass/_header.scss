@@ -1,14 +1,54 @@
 .headerdesko{
+    display: flex ;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    padding-top: 1rem;
+    z-index: 300;
+    div nav ul{
+        list-style: none;
+        margin-top: 0.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        li{
+            a{
+                padding: 0 .4rem;
+            text-decoration: none;
+            }
+        }
+    }  
     display: none;
 }
 header{
     background-color: beige;
 }
 .headerResponsive{
+    
     position: sticky;
     top: 0;
     padding-top: 1rem;
     display: flex;
     justify-content: space-around;
     z-index: 300;
+}
+
+
+@mixin reposnive {
+    @media screen and (min-width: 830px){
+    display: none;
+    }
+    
+}
+@mixin  desko {
+    @media screen and (min-width: 831px){
+        display: flex;
+        }
+        
+}
+.headerResponsive{
+    @include reposnive()
+}
+.headerdesko{
+    @include desko()
 }

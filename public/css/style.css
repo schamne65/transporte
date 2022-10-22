@@ -1,5 +1,22 @@
 .headerdesko {
+  display: flex;
+  justify-content: space-around;
+  position: sticky;
+  top: 0;
+  padding-top: 1rem;
+  z-index: 300;
   display: none;
+}
+.headerdesko div nav ul {
+  list-style: none;
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.headerdesko div nav ul li a {
+  padding: 0 0.4rem;
+  text-decoration: none;
 }
 
 header {
@@ -13,6 +30,18 @@ header {
   display: flex;
   justify-content: space-around;
   z-index: 300;
+}
+
+@media screen and (min-width: 830px) {
+  .headerResponsive {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 831px) {
+  .headerdesko {
+    display: flex;
+  }
 }
 
 .inicio img {
@@ -61,8 +90,9 @@ header {
   width: 100%;
   height: auto;
 }
-.orden p {
-  margin: 0.3rem;
+
+.e {
+  background-color: aqua;
 }
 
 @media screen and (min-width: 480px) {
@@ -73,13 +103,16 @@ header {
   }
   .orden div div {
     width: 50%;
-    height: auto;
   }
   .orden div div p {
+    font-size: 1.5rem;
     margin: 1rem;
   }
 }
 
+.formulario div {
+  display: flex;
+}
 .formulario div form {
   display: flex;
   flex-direction: column;
@@ -89,7 +122,7 @@ header {
 .formulario div input {
   border-radius: 1rem;
   box-shadow: 1px 2px gray;
-  width: 70%;
+  width: 50%;
   margin: 0.5rem 0;
   padding: 0.5rem;
 }
@@ -121,6 +154,9 @@ header {
   }
   .objetivos div img {
     width: 100%;
+  }
+  .objetivos div p {
+    font-size: 1.5rem;
   }
 }
 
@@ -241,6 +277,7 @@ footer div strong {
 .body {
   margin: 0 0.4rem;
   background-color: #B4FF9F;
+  border: 3px solid red;
 }
 
 /*# sourceMappingURL=style.css.map */

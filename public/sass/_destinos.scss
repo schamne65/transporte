@@ -1,5 +1,5 @@
 .orden{
- 
+     
     div{
         width: 100%;
         height: auto;
@@ -7,34 +7,34 @@
             width:100% ;
             height:auto;
         }
+        
+        
     }
-    p{
-        margin: 0.3rem;
-    }
+    
 
 }
-
+.e{
+    background-color: aqua;
+}
 @mixin media {
     @media screen and (min-width: 480px){
         div{
             display:flex;
             justify-content: center;
             align-items: center;
+         
           div{
            
             width: 50%;
-            height: auto;
+          
+           
             p{
+                font-size: 1.5rem;
                 margin: 1rem;
-
             }
           }
-        }
-       
+   }
     } 
-              
-        
-    
 }
 
 .orden {
